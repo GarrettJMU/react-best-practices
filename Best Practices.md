@@ -12,6 +12,7 @@ Things we learned:
 5) We're a huge fan of Material UI decorators. Most notably <a href="https://material-ui.com/customization/css-in-js/#withstyles-styles-options-higher-order-component">withStyles</a> and <a href="https://material-ui.com/layout/breakpoints/#withwidth-">withWidth</a>. 
     - <a href="/withStyle.jsx">Click here for an example of withStyles</a>.
     - <a href="/withWidth.jsx">Click here for an exmample of withWidth</a>.
+    - A note on withWidth. React has another component called Hidden that is powerful. We decided that if we are using a ternary operator and one of the conditionals is null then we should instead use Hidden.
 6) We combine multiple decorators with <a href="https://github.com/acdlite/recompose">recompose</a>. 
     - Click here for an example of combining decorator on a class and on a functional component
 7) We noticed we had useless divs everywhere (EVERYWHERE). I'm sure you notice that you need to return one container (usually a div) as a common pattern is returning a list of items/components etc. So React solved for this. We use <a href="https://reactjs.org/docs/fragments.html#short-syntax">React.Fragment</a> to wrap things that would otherwise not need to be wrapped (i.e. BlogRoutes.jsx doesn't need a div surrounding that). 
