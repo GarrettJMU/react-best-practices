@@ -17,4 +17,5 @@ Things we learned:
 7) We noticed we had useless divs everywhere (EVERYWHERE). I'm sure you notice that you need to return one container (usually a div) as a common pattern is returning a list of items/components etc. So React solved for this. We use <a href="https://reactjs.org/docs/fragments.html#short-syntax">React.Fragment</a> to wrap things that would otherwise not need to be wrapped (i.e. BlogRoutes.jsx doesn't need a div surrounding that). 
     - Click here for an example using React Fragment
     - They have new shorthand syntax <> </>. We haven't fully adapted to that but should you enjoy using that it seems recommended from the docs.
-
+8) We needed to solve for having a custom 404 to protect against other pages (as a growth website we change routes frequently and cleaning up 4 years of technical debt left us with ~1000 old routes). 
+    - We use react-router and added in a switch statement with a catch-all at the bottom with a wildcard. You can see an example by clicking here.
