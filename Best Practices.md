@@ -12,6 +12,6 @@ Things we learned:
 5) We're a huge fan of Material UI decorators. Most notably withStyles and withWidth. 
     - Click here for an example of withStyles
     - Click here for an exmample of withWidth
-6) We combine multiple decorators with <a href="https://github.com/acdlite/recompose>recompose</a>. 
+6) We combine multiple decorators with <a href="https://github.com/acdlite/recompose> recompose </a>. 
     - Click here for an example of combining decorator on a class and on a functional component
 
