@@ -7,4 +7,5 @@ Things we learned:
 2) <a href="https://material.io/tools/icons/?style=baseline">Material-UI</a> has probably designed it (Can you tell we like Material UI?)
 3) You rarely need Components that aren't functional components. The only time we use components is if we need to use something in the state.
     - You're probably wondering what a functional component is. <a href="/FirstExample.jsx">Here's a simple example.</a>
+4) We have yet to need to use Component, instead we use <a href="https://reactjs.org/docs/react-api.html#reactpurecomponent">PureComponent</a>. The TLDR is "If your React component’s render() function renders the same result given the same props and state, you can use React.PureComponent for a performance boost in some cases."
 
